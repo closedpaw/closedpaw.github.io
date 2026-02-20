@@ -15,10 +15,10 @@ function App() {
               <a href="#features" className="text-dark-300 hover:text-white transition-colors">Features</a>
               <a href="#security" className="text-dark-300 hover:text-white transition-colors">Security</a>
               <a href="#install" className="text-dark-300 hover:text-white transition-colors">Install</a>
-              <a href="https://github.com/logansin/closedpaw/wiki" className="text-dark-300 hover:text-white transition-colors">Docs</a>
+              <a href="https://github.com/closedpaw/closedpaw/wiki" className="text-dark-300 hover:text-white transition-colors">Docs</a>
             </div>
             <a
-              href="https://github.com/logansin/closedpaw"
+              href="https://github.com/closedpaw/closedpaw"
               className="flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
             >
               <Github size={18} />
@@ -57,7 +57,7 @@ function App() {
               Get Started
             </a>
             <a
-              href="https://github.com/logansin/closedpaw/wiki"
+              href="https://github.com/closedpaw/closedpaw/wiki"
               className="flex items-center gap-2 px-8 py-4 bg-dark-800 hover:bg-dark-700 rounded-xl font-semibold transition-colors border border-dark-600"
             >
               <BookOpen size={20} />
@@ -204,7 +204,7 @@ function App() {
             <InstallCard
               icon={<Container className="text-primary-400" size={24} />}
               title="Docker"
-              command="docker pull ghcr.io/logansin/closedpaw:latest"
+              command="docker pull ghcr.io/closedpaw/closedpaw:latest"
               description="Pre-built image from GitHub Container Registry"
             />
           </div>
@@ -243,15 +243,15 @@ function App() {
             </div>
             
             <div className="flex items-center gap-6 text-dark-400">
-              <a href="https://github.com/logansin/closedpaw" className="hover:text-white transition-colors flex items-center gap-1">
+              <a href="https://github.com/closedpaw/closedpaw" className="hover:text-white transition-colors flex items-center gap-1">
                 <Github size={18} />
                 GitHub
               </a>
-              <a href="https://github.com/logansin/closedpaw/wiki" className="hover:text-white transition-colors flex items-center gap-1">
+              <a href="https://github.com/closedpaw/closedpaw/wiki" className="hover:text-white transition-colors flex items-center gap-1">
                 <BookOpen size={18} />
                 Wiki
               </a>
-              <a href="https://github.com/logansin/closedpaw/pkgs/container/closedpaw" className="hover:text-white transition-colors flex items-center gap-1">
+              <a href="https://github.com/closedpaw/closedpaw/pkgs/container/closedpaw" className="hover:text-white transition-colors flex items-center gap-1">
                 <Package size={18} />
                 Docker
               </a>
