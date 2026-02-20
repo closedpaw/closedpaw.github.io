@@ -509,13 +509,13 @@ npm install -g closedpaw
       promptInjection: { title: 'Защита от Prompt Injection', description: 'Защита от атак типа CVE-2026-25253 с многослойным обнаружением паттернов.' },
       sandboxing: { title: 'Усиленная Песочница', description: 'Настоящая изоляция на уровне ядра с gVisor и Kata Containers.' },
       localLLM: { title: 'Поддержка Локальных LLM', description: 'Работает с Ollama для полностью офлайн-режима.' },
-      hitl: { title: 'Человек-в-Цикле', description: 'Критические действия требуют вашего явного одобрения.' },
-      audit: { title: 'Аудит Логирования', description: 'Все действия записываются для судебного анализа.' }
+      hitl: { title: 'Человек-в-Цикле', description: 'Критические действия требуют вашего подтверждения.' },
+      audit: { title: 'Аудит и Журналирование', description: 'Все действия записываются для анализа и расследования инцидентов.' }
     },
     security: {
       title1: 'Реальность',
       title2: 'Безопасности',
-      subtitle: 'Никакая система не на 100% безопасна. Мы заявляем максимально возможную защиту.',
+      subtitle: 'Никакая система не даёт 100% гарантии. Мы обеспечиваем максимально возможную защиту.',
       tableHeaders: { threat: 'Угроза', protection: 'Защита', notes: 'Примечания' },
       threats: {
         promptInjection: { name: 'Prompt Injection', note: 'Множество слоёв защиты, санитизация ввода' },
@@ -525,8 +525,8 @@ npm install -g closedpaw
         supplyChain: { name: 'Цепочка Поставок', note: 'Подписанные пакеты' },
         physicalAccess: { name: 'Физический Доступ', note: 'Шифрование ОС' }
       },
-      defenseDepth: 'Защита в Глубину',
-      layers: ['Валидация Ввода', 'Фильтры Промптов', 'Песочница', 'HITL Одобрение', 'Аудит Логов', 'Шифрование']
+      defenseDepth: 'Многоуровневая Защита',
+      layers: ['Проверка Ввода', 'Фильтрация Промптов', 'Изоляция в Песочнице', 'Подтверждение Пользователя', 'Журналирование', 'Шифрование']
     },
     install: {
       title1: 'Быстрая',
@@ -560,7 +560,7 @@ npm install -g closedpaw
         zeroTrust: { title: 'Принципы Zero-Trust', description: 'Никогда не доверяй, всегда проверяй' },
         sandboxing: { title: 'Усиленная песочница', description: 'Изоляция gVisor и Kata Containers' },
         hitl: { title: 'Человек-в-цикле', description: 'Процессы одобрения критических действий' },
-        audit: { title: 'Аудит и соответствие', description: 'Логирование и криминалистика' },
+        audit: { title: 'Аудит и Соответствие', description: 'Журналирование событий и анализ инцидентов' },
         threatModel: { title: 'Модель угроз', description: 'Анализ угроз и безопасность' }
       },
       content: {}
