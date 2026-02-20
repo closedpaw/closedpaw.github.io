@@ -1,4 +1,4 @@
-import { Shield, Lock, Server, Cpu, Github, Package, Docker, BookOpen, ChevronRight, Terminal, CheckCircle, AlertTriangle } from 'lucide-react'
+import { Shield, Lock, Server, Cpu, Github, Package, BookOpen, ChevronRight, Terminal, CheckCircle, AlertTriangle, Container } from 'lucide-react'
 
 function App() {
   return (
@@ -202,7 +202,7 @@ function App() {
             
             {/* Docker Installation */}
             <InstallCard
-              icon={<Docker className="text-primary-400" size={24} />}
+              icon={<Container className="text-primary-400" size={24} />}
               title="Docker"
               command="docker pull ghcr.io/logansin/closedpaw:latest"
               description="Pre-built image from GitHub Container Registry"
