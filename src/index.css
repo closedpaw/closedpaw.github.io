@@ -19,7 +19,13 @@ body {
   min-height: 100vh;
 }
 
-/* Custom scrollbar */
+/* Light theme */
+html.light body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Custom scrollbar - dark */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -37,6 +43,19 @@ body {
   background: #64748b;
 }
 
+/* Custom scrollbar - light */
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #0ea5e9 100%);
@@ -50,7 +69,7 @@ body {
   box-shadow: 0 0 40px rgba(14, 165, 233, 0.3);
 }
 
-/* Code block style */
+/* Code block style - dark */
 .code-block {
   font-family: 'JetBrains Mono', monospace;
   background: #1e293b;
@@ -58,4 +77,10 @@ body {
   border-radius: 8px;
   padding: 16px;
   overflow-x: auto;
+}
+
+/* Code block style - light */
+html.light .code-block {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
 }
