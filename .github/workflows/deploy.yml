@@ -25,18 +25,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: closedpaw.github.io/package-lock.json
 
       - name: Install dependencies
-        run: |
-          cd closedpaw.github.io
-          npm ci
+        run: npm install
 
       - name: Build
-        run: |
-          cd closedpaw.github.io
-          npm run build
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -44,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./closedpaw.github.io/dist
+          path: ./dist
 
   deploy:
     environment:
